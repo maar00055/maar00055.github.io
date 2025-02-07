@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(135, 135, 247);
+    font-family: arial, sans-serif;
+}
+h1{
+    color: black;
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+}
+
+h1,h2{
+    text-decoration: underline;
+}
+/* class name use . before and id use # before */
+.btn{
+    background-color: aquamarine;
+    color: rgba(238, 9, 9, 0.562);
+    padding: 16px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0px 1px 5px 6px #ddd;
+}
+
+.btn:hover{
+    color: aquamarine;
+    background-color: rgba(238, 9, 9, 0.562);
+}
+
+#intropara{
+    font-style: italic;
+}
+
+article h2{
+    color: red;
+}
+
+
+ul li:nth-child(2n+1){
+    color: aqua;
+}
+
+.secondClass{
+    border: 2px solid #fff;
+}
+
+form{
+    background-color: #fff;
+    max-width: 700px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+
+input, textarea {
+    display: block;
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
