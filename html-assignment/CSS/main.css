@@ -1,0 +1,54 @@
+body{
+    font-family: arial, sans-serif;
+    font-size: 18px;
+}
+
+header, footer {
+    background-color: #3498db; /* Blue background color */
+    color: white; /* White text color for contrast */
+    padding: 20px; /* Add some padding */
+    text-align: center; /* Center the text */
+}
+
+.site-title{
+    color: beige;
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+#hobbies{
+    list-style-type: square;
+}
+
+#hobbies li:nth-child(odd) {
+    background-color: rgb(138, 131, 145);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a:hover, nav a:focus {
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
+}
