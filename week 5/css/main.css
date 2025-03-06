@@ -15,6 +15,18 @@ h1,h2{
     text-decoration: underline;
 }
 /* class name use . before and id use # before */
+
+.headOne{
+    color: bisque;
+}
+
+#headingOne{
+    color: rgb(240, 13, 13);
+}
+
+
+
+
 .btn{
     background-color: aquamarine;
     color: rgba(238, 9, 9, 0.562);
@@ -63,5 +75,9 @@ input, textarea {
     padding: 5px;
     font-size: 16px;
     width: 100%;
+}
+
+article section h3 {
+
 }
 

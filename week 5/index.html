@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to CSS styling</h1>
+        <h1 id="headingOne" class="headOne">Welcome to CSS styling</h1>
     </header>
     <main>
         <h2>Form example</h2>
@@ -25,9 +25,17 @@
           <label for="usermessage">message:</label>
           <textarea name="" id="usermessage" cols="10" rows="5"></textarea>
 
+          <p>Do you want us to contact you ?</p>
+          <label for="yes">Yes</label>
+          <input type="radio" id="yes" name="contactPref" value="Yes" checked>
+
+          <label for="no">No</label>
+          <input type="radio" id="no" name="contactPref" value="No">
+
           <button class="btn">Send</button>
         </form>
         <article>
+
             <h2 class="btn secondClass">Rose</h2>
             <section>
               <h3>Botany</h3>
