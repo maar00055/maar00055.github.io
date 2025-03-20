@@ -1,0 +1,57 @@
+body{
+    background-color: aquamarine;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+.one{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 5px solid black;
+}
+
+
+@media screen and (min-width:650px){
+    body{
+        background-color: bisque;
+    }
+    h1{
+        color: aqua;
+    }
+    .one{
+        background-color: brown;
+        border-radius: 1rem;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:800px){
+    h1{
+        font-size: 4rem;
+    }
+}
+
+
+
+@media screen and (min-width:900px){
+    body{
+        background-color: blueviolet;
+    }
+    .one{
+        display: none;
+    }
+}
+
+/* @media print{
+    img{
+        display: none;
+    }
+} */
+
+@media print{
+    a::after{
+      content: " <" attr(href) ">";
+    }
+  }
