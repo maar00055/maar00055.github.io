@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./CSS/main.css">
+  <link rel="stylesheet" href="./CSS/reset.css">
   <title>Three Star Media</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -25,9 +26,11 @@
       </ul>
     </nav>
     <form class="search-form">
-      <input type="text" placeholder="Search..." />
+      <label for="site-search" class="visually-hidden">Search site</label>
+      <input type="text" id="site-search" placeholder="Search..." />
       <button type="submit">🔍</button>
     </form>
+    
   </header>
 
   <!-- Hero Section -->
@@ -46,6 +49,8 @@
     <div class="content">
       <h2>About Us</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sequi, minima consectetur dolor optio delectus voluptatibus tempore iure incidunt iste at minus mollitia sint quae modi deserunt earum, itaque voluptas.</p>
+      
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nesciunt odit quisquam nam et voluptas, assumenda pariatur, similique est minus totam tempora aspernatur cum non sunt quidem neque dicta sequi!</p>
     </div>
   </section>
 
@@ -129,7 +134,7 @@
 
     <!-- Message Form -->
     <form class="contact-form">
-        <p>Send us a message</p>
+      <h3>Send us a message</h3>
       <label for="name">Full Name</label>
       <input type="text" id="name" name="name" required />
 
@@ -146,10 +151,16 @@
     <div class="hours">
       <h3>Hours of Operation</h3>
       <table>
-        <tr><td>Monday - Friday</td><td>9am - 6pm</td></tr>
-        <tr><td>Saturday</td><td>Closed</td></tr>
-        <tr><td>Sunday</td><td>Closed</td></tr>
+        <thead>
+          <tr><th>Days</th><th>Hours</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Monday - Friday</td><td>9am - 6pm</td></tr>
+          <tr><td>Saturday</td><td>Closed</td></tr>
+          <tr><td>Sunday</td><td>Closed</td></tr>
+        </tbody>
       </table>
+      
     </div>
 
     <!-- Location -->

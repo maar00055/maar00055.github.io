@@ -1,0 +1,316 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fff;
+  background-color: #222;
+  line-height: 1.6;
+}
+
+/* CONTAINER */
+body > * {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* HEADER */
+header {
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.search-form {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-form button {
+  background-color: #c78c06;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  text-align: center;
+  background-color: #000;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.4;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 1rem;
+  max-width: 90%;
+}
+
+.hero-text h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: #c78c06;
+  color: #222;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* ABOUT */
+#about {
+  background-color: #ffe6ac;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#about img {
+  width: 100%;
+}
+
+#about .content {
+  padding: 1rem 0;
+}
+
+/* SERVICES */
+#services {
+  background-color: #fff;
+  color: #222;
+  padding-top: 2rem;
+}
+
+#services h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 1.5rem;
+}
+
+.service {
+  margin-bottom: 2rem;
+}
+
+.service img {
+  width: 100%;
+}
+
+.service h3 {
+  margin: 0.5rem 0;
+}
+
+.service p {
+  margin-bottom: 0.5rem;
+}
+
+/* VISION */
+.vision {
+  background-color: #c78c06;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.vision img {
+  width: 100%;
+}
+
+/* TEAM */
+/* Team Section */
+#team {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #fff;
+  }
+  
+  #team h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
+  .team-member {
+    margin-bottom: 2rem;
+  }
+  
+  .team-member img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  
+  .team-member h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #c78c06;
+  }
+  
+  .team-member p {
+    margin-top: 0.5rem;
+    color: #222;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+
+/* CONTACT */
+#contact {
+  background-color: #fff;
+  color: #222;
+  display: grid;
+  gap: 2rem;
+}
+
+.contact-form,
+.hours,
+.location {
+  background-color: #f9f9f9;
+  padding: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form button {
+  background-color: #c78c06;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* MEDIA QUERY: DESKTOP */
+@media (min-width: 760px) {
+  /* Header Navigation */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .hero-text {
+    max-width: 60%;
+  }
+
+  /* ABOUT: Grid layout */
+  #about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  /* SERVICES: Flexbox */
+  #services .service {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  #services .service:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .service img {
+    width: 50%;
+  }
+
+  .service h3,
+  .service p,
+  .service a {
+    flex: 1;
+  }
+
+  /* TEAM: Side-by-side */
+  #team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  /* CONTACT: Grid layout */
+  #contact {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
